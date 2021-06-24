@@ -73,6 +73,17 @@ p {
     right: 30%;
 }
 
+@media (max-width: 1028px) {
+    #title {
+        text-align: center;
+    }
+
+    .phone-capture {
+        transform: rotate(0deg);
+        position: static;
+    }
+}
+
 /* Features */
 
 #features {
