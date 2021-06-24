@@ -147,3 +147,35 @@ p {
 .pricing-column {
     padding: 3% 2%;
 }
+
+/* Call to action */
+
+#cta {
+    background-color: #ff4c68;
+    text-align: center;
+    color: white;
+    padding: 7% 15%;
+}
+
+.cta-heading {
+    font-weight: 900;
+    font-size: 3.5rem;
+}
+
+@media (max-width: 770px) {
+    .cta-heading {
+        font-size: 2.5rem;
+    }
+}
+
+/* Footer */
+
+#footer {
+    padding: 6% 10%;
+    background-color: white;
+    text-align: center;
+}
+
+.social-icon {
+    margin: 20px 10px;
+}
