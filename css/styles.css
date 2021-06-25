@@ -1,38 +1,84 @@
-#title {
-    background-color: #ff4c68;
-    color: white;
-}
-
-.container-fluid {
-    padding: 3% 15% 7%;
-}
-
 body {
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
+    text-align: center;
 }
 
-h1 {
-    font-family: 'Montserrat', sans-serif;
-    font-weight: 900;
-    font-size: 3.5rem;
-    line-height: 1.5;
-}
-
-h2 {
+h1, h2, h3, h4, h5, h6 {
     font-weight: 700;
-    font-size: 3rem;
-    line-height: 1.5;
-}
-
-h3 {
-    font-weight: 700;
-    font-size: 1.5rem;
 }
 
 p {
     color: #8f8f8f;
 }
+
+/* Headings */
+
+.big-heading {
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5; 
+}
+
+/* Buttons */
+
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+/* Containers */
+
+.container-fluid {
+    padding: 7% 15%;
+}
+
+/* Title Section */
+
+#title {
+    background-color: #ff4c68;
+    color: white;
+    text-align: left;
+}
+
+#title .container-fluid {
+    padding: 3% 15% 7%;
+}
+
+.img-div {
+    position: relative;
+}
+
+.phone-capture {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+@media (max-width: 991px) {
+    #title {
+        text-align: center;
+    }
+
+    .phone-capture {
+        transform: rotate(0deg);
+        position: static;
+    }
+}
+
+/* When the screen reaches this width */
+/* @media (min-width: 1268px) { */
+    /* Minimum width required to apply this rule */
+    /* .phone-capture {
+        width: 50%;
+    } */
+/* } */
+
 
 /* Navigation Bar */
 
@@ -54,46 +100,15 @@ p {
     font-weight: 300;
 }
 
-/* Download buttons */
-
-.download-button {
-    margin: 5% 3% 5% 0;
-}
-
-/* Title image */
-
-.img-div {
-    position: relative;
-}
-
-.phone-capture {
-    width: 60%;
-    transform: rotate(25deg);
-    position: absolute;
-    right: 30%;
-}
-
-@media (max-width: 1028px) {
-    #title {
-        text-align: center;
-    }
-
-    .phone-capture {
-        transform: rotate(0deg);
-        position: static;
-    }
-}
-
-/* Features */
+/* Feature Section */
 
 #features {
-    padding: 7% 15%;
     position: relative;
     background-color: white;
 }
 
 .feature-box {
-    text-align: center;
+    
     padding: 5%;
 }
 
@@ -106,12 +121,21 @@ p {
     color: #ff4c68;
 }
 
-/* Testimonial */
+.feature-title {
+    font-size: 1.5rem;
+}
+
+/* Testimonial Section */
 
 #testimonials {
     background-color: #ef8172;
     color: white;
-    text-align: center;
+    
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
 }
 
 .testimonial-image {
@@ -120,15 +144,12 @@ p {
     margin: 20px;
 }
 
-.carousel-item {
-    padding: 7% 15%;
-}
 
-/* Press */
+/* Press Section */
 
 #press {
     background-color: #ef8172;
-    text-align: center;
+    
     padding-bottom: 3%;
 }
 
@@ -137,33 +158,31 @@ p {
     margin: 20px 20px 50px;
 }
 
-/* Pricing */
+/* Pricing Section */
 
 #pricing {
     padding: 100px;
-    text-align: center;
+    
 }
 
 .pricing-column {
     padding: 3% 2%;
 }
 
-/* Call to action */
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+/* Call to action Section */
 
 #cta {
     background-color: #ff4c68;
-    text-align: center;
     color: white;
-    padding: 7% 15%;
-}
-
-.cta-heading {
-    font-weight: 900;
-    font-size: 3.5rem;
 }
 
 @media (max-width: 770px) {
-    .cta-heading {
+    .big-heading {
         font-size: 2.5rem;
     }
 }
@@ -173,7 +192,7 @@ p {
 #footer {
     padding: 6% 10%;
     background-color: white;
-    text-align: center;
+    
 }
 
 .social-icon {
